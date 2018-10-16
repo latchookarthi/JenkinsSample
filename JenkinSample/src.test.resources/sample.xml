@@ -1,0 +1,32 @@
+
+ <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite thread-count="1" verbose="2" name="JenkinsTraining1" annotations="JDK" parallel="false">
+
+
+<test name ="Script1">
+
+<classes>
+<class name="jenkins.jenkins.AppTest1"/>
+
+
+</classes>
+</test>
+
+
+<test name ="Script2">
+
+<classes>
+<class name="jenkins.jenkins.AppTest2"/>
+
+
+</classes>
+</test>
+<test name ="Script3">
+
+<classes>
+<class name="jenkins.jenkins.AppTest3"/>
+
+
+</classes>
+</test>
+</suite>
