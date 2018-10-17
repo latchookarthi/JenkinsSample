@@ -5,17 +5,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+
 /**
  * Hello world!
  *
  */
-public abstract class App 
+public class App 
 
 {
-    protected WebDriver driver = null;
+     WebDriver driver = null;
 //	 protected static WebDriver driver;
 @BeforeTest
-    protected void resuse()
+     void resuse()
     {
 //	System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajalakshmi.ragavan\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");	
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src.main.resources\\drivers\\chromedriver.exe");
@@ -27,7 +28,7 @@ public abstract class App
     }
 
     @AfterTest
-    protected void quit()
+    public void quit()
     {
     
 //System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajalakshmi.ragavan\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");
