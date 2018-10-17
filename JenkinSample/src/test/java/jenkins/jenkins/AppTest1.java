@@ -16,7 +16,7 @@ public class AppTest1 extends App
 	@Test
 	public void Script1() throws InterruptedException
 	{
-//	driver=App.resuse();
+	driver=App.resuse();
   	Thread.sleep(4000);
 //		driver.manage().window().maximize();
 

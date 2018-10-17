@@ -14,6 +14,8 @@ public class AppTest3 extends App
 	@Test
 	public void Script1()
 	{
+		driver=App.resuse();
+
 		driver.get("https://www.disney.com");
 //		driver.manage().window().maximize();
 		System.out.println("firefox 3 loaded");

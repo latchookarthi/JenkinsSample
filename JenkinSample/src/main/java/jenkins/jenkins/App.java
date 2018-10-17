@@ -13,10 +13,11 @@ import org.testng.annotations.BeforeTest;
 public class App 
 
 {
-     WebDriver driver = null;
+     static WebDriver driver = null;
 //	 protected static WebDriver driver;
-@BeforeTest
-     void resuse()
+//@BeforeTest
+static
+     WebDriver resuse()
     {
 //	System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajalakshmi.ragavan\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");	
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src.main.resources\\drivers\\chromedriver.exe");
@@ -25,6 +26,7 @@ public class App
     	 System.out.println("driver loaded");
 //    	 System.out.println(System.getProperty("user.dir")+"\\src.main.resources\\drivers\\chromedriver.exe");
 //return driver;
+		return driver;
     }
 
     @AfterTest
