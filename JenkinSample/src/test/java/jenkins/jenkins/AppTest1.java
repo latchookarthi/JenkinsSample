@@ -18,13 +18,13 @@ public class AppTest1 extends App
 	{
 	driver=App.resuse();
   	Thread.sleep(4000);
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 
 	driver.get("http://www.accenture.com");
 	Thread.sleep(4000);
 //	org.testng.Assert.fail();
-	driver.findElement(By.name("q")).click();
-	driver.findElement(By.name("q")).sendKeys("yahoo");
+//	driver.findElement(By.name("q")).click();
+//	driver.findElement(By.name("q")).sendKeys("yahoo");
 	System.out.println("accentue loaded");
 	
 	
