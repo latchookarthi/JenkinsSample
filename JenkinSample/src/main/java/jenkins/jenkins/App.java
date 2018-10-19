@@ -19,7 +19,7 @@ static
      WebDriver resuse()
     {
 //	System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajalakshmi.ragavan\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");	
-	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src.main.resources\\drivers\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src.main.resources/drivers/chromedriver");
     	 driver		=new ChromeDriver();
 //System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajalakshmi.ragavan\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");
     	 System.out.println("driver loaded");
