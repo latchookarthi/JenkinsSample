@@ -20,10 +20,10 @@ static
      WebDriver resuse()
     {
 //	System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajalakshmi.ragavan\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");	
-	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src.main.resources/drivers/chromedriver");
-	System.out.println("values"+ System.getProperty("user.dir")+"/src.main.resources/drivers/chromedriver");
-    	 driver		=new ChromeDriver();
-    	 
+	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src.main.resources/drivers/chromedriver-2");
+	System.out.println("values"+ System.getProperty("user.dir")+"/src.main.resources/drivers/chromedriver-2");
+//    	 driver		=new ChromeDriver();
+
     	 DesiredCapabilities capability = DesiredCapabilities.chrome();        
          capability.setCapability("ignoreZoomSetting", true);
          capability.setCapability("ignoreProtectedModeSettings", true);
