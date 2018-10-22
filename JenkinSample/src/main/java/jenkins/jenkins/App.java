@@ -2,6 +2,7 @@ package jenkins.jenkins;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 
 
@@ -22,6 +23,10 @@ static
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src.main.resources/drivers/chromedriver");
 	System.out.println("values"+ System.getProperty("user.dir")+"/src.main.resources/drivers/chromedriver");
     	 driver		=new ChromeDriver();
+    	 
+    	 DesiredCapabilities capability = DesiredCapabilities.chrome();        
+         capability.setCapability("ignoreZoomSetting", true);
+         capability.setCapability("ignoreProtectedModeSettings", true);
 //System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajalakshmi.ragavan\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");
     	 System.out.println("driver loaded");
 //    	 System.out.println(System.getProperty("user.dir")+"\\src.main.resources\\drivers\\chromedriver.exe");
