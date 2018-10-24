@@ -21,6 +21,7 @@ public class AppTest3 extends App
 		System.out.println("firefox 3 loaded");
 //		driver.findElement(By.name("q")).click();
 //		driver.findElement(By.name("q")).sendKeys("accenture");
+		driver.close();
 	}
 }
 

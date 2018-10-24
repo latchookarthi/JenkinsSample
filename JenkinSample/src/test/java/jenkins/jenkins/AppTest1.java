@@ -26,7 +26,7 @@ public class AppTest1 extends App
 //	driver.findElement(By.name("q")).click();
 //	driver.findElement(By.name("q")).sendKeys("yahoo");
 	System.out.println("accentue loaded");
-	
+	driver.close();
 	
 	}
 }
