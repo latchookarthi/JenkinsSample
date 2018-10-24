@@ -21,8 +21,8 @@ static
      WebDriver resuse()
     {
 //	System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajalakshmi.ragavan\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");	
-	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src.main.resources/drivers/chromedriver");
-	System.out.println("values"+ System.getProperty("user.dir")+"/src.main.resources/drivers/chromedriver");
+	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//src.main.resources//drivers//chromedriver");
+	System.out.println("values"+ System.getProperty("user.dir")+"//src.main.resources//drivers//chromedriver");
     	 driver		=new ChromeDriver();
 //    	 driver		=new SafariDriver();
 
