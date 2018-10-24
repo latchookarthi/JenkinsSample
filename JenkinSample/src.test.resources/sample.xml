@@ -13,7 +13,7 @@
 </test>
 
 
-<test name ="Script2">
+<!-- <test name ="Script2">
 
 <classes>
 <class name="jenkins.jenkins.AppTest2"/>
@@ -27,6 +27,6 @@
 <class name="jenkins.jenkins.AppTest3"/>
 
 
-</classes>
+</classes> -->
 </test>
 </suite>
