@@ -18,6 +18,8 @@ public class AppTest3 extends App
 
 		driver.get("https://www.disney.com");
 //		driver.manage().window().maximize();
+		driver.manage().window().fullscreen();
+
 		System.out.println("firefox 3 loaded");
 //		driver.findElement(By.name("q")).click();
 //		driver.findElement(By.name("q")).sendKeys("accenture");

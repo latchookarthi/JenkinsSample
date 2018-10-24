@@ -19,6 +19,7 @@ public class AppTest1 extends App
 	driver=App.resuse();
   	Thread.sleep(4000);
 //		driver.manage().window().maximize();
+	driver.manage().window().fullscreen();
 
 	driver.get("http://www.accenture.com");
 	Thread.sleep(4000);

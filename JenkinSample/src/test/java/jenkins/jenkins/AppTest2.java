@@ -18,10 +18,13 @@ public class AppTest2 extends App
 		driver=App.resuse();
 
 		driver.get("https://www.google.com");
-		driver.manage().window().maximize();
+		driver.manage().window().fullscreen();
+
 		System.out.println("google 2 loaded");
 		driver.findElement(By.name("q")).click();
 		driver.findElement(By.name("q")).sendKeys("accenture");
+		System.out.println("entered the value");
+
 		driver.close();
 	}
 }
