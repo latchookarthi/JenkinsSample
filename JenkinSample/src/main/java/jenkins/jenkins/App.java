@@ -27,9 +27,9 @@ static
 //    	 driver		=new SafariDriver();
 
 
-//    	 DesiredCapabilities capability = DesiredCapabilities.chrome();        
-//         capability.setCapability("ignoreZoomSetting", true);
-//         capability.setCapability("ignoreProtectedModeSettings", true);
+    	 DesiredCapabilities capability = DesiredCapabilities.chrome();        
+         capability.setCapability("ignoreZoomSetting", true);
+         capability.setCapability("ignoreProtectedModeSettings", true);
 ////System.setProperty("webdriver.chrome.driver", "C:\\Users\\rajalakshmi.ragavan\\Downloads\\chromedriver_win32 (5)\\chromedriver.exe");
 //    	 System.out.println("driver loaded");
 ////    	 System.out.println(System.getProperty("user.dir")+"\\src.main.resources\\drivers\\chromedriver.exe");
