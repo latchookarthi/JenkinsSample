@@ -13,9 +13,10 @@ public class AppTest2 extends App
 {
 
 	@Test
-	public void Script1()
+	public void Script1() throws InterruptedException
 	{
 		driver=App.resuse();
+		Thread.sleep(10000);
 
 		driver.get("https://www.google.com");
 		driver.manage().window().fullscreen();
