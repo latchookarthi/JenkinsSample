@@ -30,7 +30,7 @@ public class AppTest1 extends App
 	System.out.println("maximize");
 
 	driver.get("http://www.accenture.com");
-	Thread.sleep(4000);
+	Thread.sleep(4000000);
 //	org.testng.Assert.fail();
 //	driver.findElement(By.name("q")).click();
 //	driver.findElement(By.name("q")).sendKeys("yahoo");
