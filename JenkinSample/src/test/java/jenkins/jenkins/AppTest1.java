@@ -28,9 +28,9 @@ public class AppTest1 extends App
 
 	//driver.manage().window().fullscreen();
 	System.out.println("maximize");
-
+    driver.switchTo().window(driver.getWindowHandle());
 	driver.get("http://www.accenture.com");
-	Thread.sleep(4000000);
+	Thread.sleep(40000);
 //	org.testng.Assert.fail();
 //	driver.findElement(By.name("q")).click();
 //	driver.findElement(By.name("q")).sendKeys("yahoo");
