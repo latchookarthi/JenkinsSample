@@ -22,14 +22,16 @@ public class AppTest1 extends App
 //		driver.manage().window().maximize();
 	System.out.println("driver loaded");
 	Window win = driver.manage().window();
-	if (null != win)
-		System.out.print("Hi" + win.toString());
+		
 	//win.
+	win.fullscreen();
+	System.out.print("Hi" + win.getSize());
 
 	//driver.manage().window().fullscreen();
 	System.out.println("maximize");
     driver.switchTo().window(driver.getWindowHandle());
 	driver.get("http://www.accenture.com");
+	
 	Thread.sleep(40000);
 //	org.testng.Assert.fail();
 //	driver.findElement(By.name("q")).click();
