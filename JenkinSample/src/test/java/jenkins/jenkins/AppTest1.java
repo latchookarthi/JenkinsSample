@@ -2,6 +2,7 @@ package jenkins.jenkins;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
@@ -20,8 +21,12 @@ public class AppTest1 extends App
   	Thread.sleep(4000);
 //		driver.manage().window().maximize();
 	System.out.println("driver loaded");
+	Window win = driver.manage().window();
+	if (null != win)
+		System.out.print("Hi" + win.toString());
+	//win.
 
-	driver.manage().window().fullscreen();
+	//driver.manage().window().fullscreen();
 	System.out.println("maximize");
 
 	driver.get("http://www.accenture.com");
